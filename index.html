@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+		<link rel="stylesheet" href="style/index.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- script -->
+
+		<title>Frontend Mentor | Todo app</title>
+	</head>
+	<body>
+		<!-- header -->
+		<header class="header-img">
+			<div class="container-form">
+				<div class="header-config">
+					<h1>Todo</h1>
+
+					<img id="sun" src="images/icon-sun.svg" alt="" />
+				</div>
+
+				<form id="form-todo">
+					<input class="input-header" type="text" placeholder="Add Todo" />
+				</form>
+			</div>
+		</header>
+
+		<div class="container">
+			<!-- todos -->
+			<section id="todos-container" class="todos-container"></section>
+
+			<!-- configuraciones -->
+			<div id="info-container"></div>
+		</div>
+
+		<footer>Drag and Drop to the recorder list</footer>
+
+		<template id="todo-info-template">
+			<div class="todo-info">
+				<span class="left">5 items left</span>
+
+				<div class="todo-options">
+					<span class="All">All</span>
+					<span class="active">Active</span>
+					<span class="completed">Completed</span>
+				</div>
+
+				<span class="clear-complete">Clear Completed</span>
+			</div>
+		</template>
+
+		<template id="template-todo">
+			<div class="todo" data-id="">
+				<div class="input-radio-container">
+					<!-- <input type="checkbox" /> -->
+				</div>
+				<p>Comiendo en la plaza</p>
+				<img class="croos" src="images/icon-cross.svg" alt="cross" />
+			</div>
+		</template>
+
+		<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
